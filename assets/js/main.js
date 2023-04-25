@@ -8,7 +8,7 @@ body.style.height = Math.floor(height) + "px";
 
 function smoothScroll() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        offset += (window.pageYOffset - offset) * 0.85;
+        offset += (window.pageYOffset - offset) * 0.65;
     }
     else {
         offset += (window.pageYOffset - offset) * 0.04;
