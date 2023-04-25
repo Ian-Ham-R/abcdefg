@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
+.smooth-scroll-wrapper {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+section {
+    height: 50em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6em 0;
+}
+
+section p {
+    font-size: 3em;
+    color: #8d8574;
+}
+
+body section:nth-child(even) {
+    background-color: #8d8574;
+}
+
+body section:nth-child(even) p {
+    color: #ffffff;
+}
